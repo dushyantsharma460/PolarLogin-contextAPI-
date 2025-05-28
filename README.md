@@ -1,12 +1,56 @@
-# React + Vite
+# Polar Bear Themed React Login App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app with user login and profile display, styled with a Polar Bear Arctic theme using Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- User login form with validation (username & password required)
+- UserContext for state management
+- Profile displays logged-in username
+- Tailwind CSS with icy blue gradients and frosty style
+- Responsive and clean UI
+- Submit button disabled until inputs valid
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+```bash
+git clone https://github.com/dushyantsharma460/PolarLogin-contextAPI-
+cd PolarLogin-contextAPI-
+npm install
+npm start
+Open http://localhost:3000
+
+Folder Structure
+pgsql
+Copy
+Edit
+src/
+├── component/
+│   ├── Login.jsx
+│   ├── Profile.jsx
+├── context/
+│   ├── UserContext.js
+│   ├── UserContextProvider.jsx
+├── App.jsx
+├── index.js
+└── App.css
+How to Use
+Enter username & password
+
+Submit enabled only if both fields are non-empty
+
+After submit, profile welcomes user
+
+Otherwise, prompts to login
+
+Customize
+Change polar bear image URL in App.jsx
+
+Modify Tailwind classes for theme tweaks
+
+Extend context for logout/auth features
+
+License
+MIT
